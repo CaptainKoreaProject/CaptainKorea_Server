@@ -2,15 +2,15 @@ var express = require('express');
 
 var router = express.Router();
 
-router.rend_page = function(req,res,next){
+router.rend_page = function(req,res){
 	res.send("politician_delete page rendering");
 }
 
-router.search = function(req,res,next){
+router.search = function(req,res){
 	res.send("searching politicians by name.");
 }
 
-router.delete_politician = function(req,res,next){
+router.delete_politician = function(req,res){
 	res.send("deleting the politician you selected.");
 }
 module.exports = router;
