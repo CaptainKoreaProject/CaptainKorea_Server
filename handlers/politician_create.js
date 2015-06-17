@@ -9,7 +9,7 @@ router.rend_page = function(req,res){
 };
 
 router.register_politician = function(req,res){
-	//res.send("register politician");
+	//To-do : 중복체크 필요
 	dbManager.create_politician(req,res);
 };
 

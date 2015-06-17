@@ -1,5 +1,7 @@
 var express = require('express');
 
+var dbManager = require('./politician_db_manager');
+
 var router = express.Router();
 
 router.rend_page = function(req,res){
@@ -11,6 +13,6 @@ router.search = function(req,res){
 }
 
 router.delete_politician = function(req,res){
-	res.send("deleting the politician you selected.");
+	dbManager.delete_politician(req,res);
 }
 module.exports = router;
